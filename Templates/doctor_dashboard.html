@@ -1,0 +1,18 @@
+<!-- doctor_dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ doctor.user.first_name }}</h2>
+    <p><strong>First Name:</strong> {{ doctor.user.first_name }}</p>
+    <p><strong>Last Name:</strong> {{ doctor.user.last_name }}</p>
+    <p><strong>Username:</strong> {{ doctor.user.username }}</p>
+    <p><strong>Email:</strong> {{ doctor.user.email }}</p>
+    <p><strong>Address Line 1:</strong> {{ doctor.address_line1 }}</p>
+    <p><strong>City:</strong> {{ doctor.city }}</p>
+    <p><strong>State:</strong> {{ doctor.state }}</p>
+    <p><strong>Pincode:</strong> {{ doctor.pincode }}</p>
+</body>
+</html>

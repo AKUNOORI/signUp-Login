@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+</head>
+<body>
+    <h2>Signup</h2>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form method="post">
+        {% csrf_token %}
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <label for="last_name">User Name:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="last_name">Email:</label>
+        <input type="text" id="email" name="email" required><br>
+        <label for="last_name">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="last_name">Confirmation Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br>
+        <label for="last_name">Address Line1:</label>
+        <input type="text" id="address_line1" name="address_line1" required><br>
+        <label for="last_name">City:</label>
+        <input type="text" id="city" name="city" required><br>
+        <label for="last_name">State:</label>
+        <input type="text" id="state" name="state" required><br>
+        <label for="last_name">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required><br>
+        <label for="user_type">User type:</label>
+        <input type="text" id="user_type" name="user_type" required><br>
+        <!-- other fields -->
+        <input type="submit" value="Signup">
+    </form>
+</body>
+</html>
